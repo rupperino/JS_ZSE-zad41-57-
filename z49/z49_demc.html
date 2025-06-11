@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let n_demc = prompt("wpisz n");
+            
+            if (n_demc == 0)
+            {
+                let silnia_demc = 1;
+                document.write(n_demc+"! = "+silnia_demc);
+            }
+            
+            else
+            {
+            let ilo = 1;
+            
+            for(let i = 1; i <= n_demc; i++){
+                ilo *= i;
+                }
+            
+            document.write(n_demc+"! = "+ilo);
+            }
+        </script>
+    </body>
+</html>

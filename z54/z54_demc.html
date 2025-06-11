@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rysowanie prostokąta</title>
+</head>
+<body>
+    <div style="font-family: monospace;">
+        <script>
+
+            var imie = prompt("Podaj swoje imię:");
+            var nazwisko = prompt("Podaj swoje nazwisko:");
+
+            var a_demc = (nazwisko.length % 4) + 5;
+            var b_demc = (imie.length % 6) + 20;
+
+            var prostokat = "";
+
+
+            prostokat += "*".repeat(a_demc + 2) + "<br>";
+
+            for (var i = 0; i < b_demc; i++) {
+                prostokat += "*";
+                prostokat += "&nbsp;".repeat(a_demc);
+                prostokat += "*<br>";
+            } 
+
+            prostokat += "*".repeat(a_demc + 2) + "<br>";
+
+            document.write(prostokat);
+        </script>
+    </div>
+
+</body>
+</html>

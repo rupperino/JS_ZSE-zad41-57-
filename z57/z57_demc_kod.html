@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+  <title>zad42_kod</title>
+  <meta charset="utf-8">
+  <style>
+    textarea {
+      color: rgb(102, 102, 102);
+      font-size: 15px;
+      resize: none;
+      height: 90vh;
+      width: 90vw;
+    }
+  </style>
+</head>
+
+<body>
+        <textarea readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pierwiastki</title>
+</head>
+<body>
+    <script>
+        function pierwiastekCzwartyStopnia(num) {
+            return Math.pow(Math.sqrt(num), 1/4);
+        }
+
+        var results = "";
+
+        var count = 0;
+
+        var dziennik = 12;
+
+        for (var i = dziennik; i < dziennik + 15; i++) {
+            var pierwiastek2 = Math.sqrt(i).toFixed(2);
+            var pierwiastek4 = pierwiastekCzwartyStopnia(i).toFixed(2);
+            results += "I=" + i + " pierw_2(" + i + ")=" + pierwiastek2 + " pierw_4(" + i + ")=" + pierwiastek4 + "<br>";
+            count++;
+            if (count === 3) {
+                results += "…………………………………………………………..<br>";
+                count = 0;
+            }
+        }
+
+        document.write(results);
+
+        confirm("Aby kontynuować, naciśnij dowolny klawisz");
+    </script>
+
+</body>
+</html>
+        </textarea>
+</body>
+
+</html>

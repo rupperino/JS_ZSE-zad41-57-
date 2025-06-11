@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+  <title>zad42_kod</title>
+  <meta charset="utf-8">
+  <style>
+    textarea {
+      color: rgb(102, 102, 102);
+      font-size: 15px;
+      resize: none;
+      height: 90vh;
+      width: 90vw;
+    }
+  </style>
+</head>
+
+<body>
+        <textarea readonly>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var a_demc = prompt("Podaj szerokość prostokąta a:");
+            var b_demc = prompt("Podaj wysokość prostokąta b:");
+
+            var gwiazdki_g = "*";
+            for (var i = 1; i < a_demc; i++) {
+                gwiazdki_g += "*";
+            }
+
+            var gwiazdki_sr = "*";
+            for (var i = 1; i < a_demc - 1; i++) {
+                gwiazdki_sr += "&nbsp;&nbsp;";
+            }
+            gwiazdki_sr += "*";
+
+            var gwiazdki_d = "*";
+            for (var i = 1; i < a_demc; i++) {
+                gwiazdki_d += "*";
+            }
+
+            document.write(gwiazdki_g + "<br>");
+
+            for (var i = 1; i < b_demc - 1; i++) {
+                document.write(gwiazdki_sr + "<br>");
+            }
+
+            document.write(gwiazdki_d + "<br>");
+
+        </script>
+    </body>
+</html>
+        </textarea>
+</body>
+
+</html>
